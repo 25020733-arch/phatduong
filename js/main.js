@@ -875,7 +875,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
                 <div class="doc-card-actions">
-                    <button class="doc-card-btn view-pdf-direct" data-path="${pdf.path}" data-title="${pdf.title}">Xem trực tiếp</button>
                     <a class="doc-card-btn" href="${pdf.path}" download>Tải xuống</a>
                 </div>
             `;
@@ -927,9 +926,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         pdfScale = 100;
         
-        // Sử dụng iframe thay vì object để tương thích tốt nhất trên mọi trình duyệt
+        // Sử dụng dữ liệu base64 nếu có (để vượt qua chặn bảo mật file:// của trình duyệt)
+        const pdfSrc = (window.pdfData && window.pdfData[path]) ? window.pdfData[path] : path;
+        
         pdfViewerContent.innerHTML = `
-            <iframe id="pdf-iframe-tag" src="${path}" width="100%" height="100%" style="border: none; transform: scale(1.0); transform-origin: top center; transition: transform 0.2s;"></iframe>
+            <embed id="pdf-iframe-tag" src="${pdfSrc}" type="application/pdf" width="100%" height="100%" style="border: none; transform: scale(1.0); transform-origin: top center; transition: transform 0.2s;">
         `;
 
         pdfModal.classList.add('active');
