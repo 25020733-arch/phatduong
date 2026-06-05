@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hành Trình Học Tập Số - Nhập Môn Công Nghệ Số & Ứng Dụng AI</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio học thuật ghi lại hành trình học tập môn Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo. Tổng hợp kỹ năng số, AI Prompting và minh chứng học tập xuất sắc.">
+    <meta name="keywords" content="portfolio, công nghệ số, ứng dụng ai, prompt engineering, hành trình học tập, AI, học thuật">
+    <meta name="author" content="Dương Danh Phát">
+    
+    <!-- Open Graph (OG) Meta Tags -->
+    <meta property="og:title" content="Hành Trình Học Tập Số - Portfolio Nhập Môn Công Nghệ Số & AI">
+    <meta property="og:description" content="Khám phá hành trình phát triển năng lực số, kỹ năng Prompt Engineering và các sản phẩm học tập AI xuất sắc.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tuan-le.github.io/digital-portfolio/">
+    <meta property="og:image" content="img/avt.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. LOADING SCREEN -->
+    <div id="loader" class="loader-wrapper" aria-hidden="true">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <div class="loader-logo">
+                <span class="logo-circle"></span>
+                <span class="logo-text">DIGITAL</span>
+            </div>
+            <p class="loader-status">Đang thiết lập không gian số...</p>
+        </div>
+    </div>
+
+    <!-- 2. CUSTOM CURSOR -->
+    <div class="custom-cursor" id="cursor-dot" aria-hidden="true"></div>
+    <div class="custom-cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+
+    <!-- 3. STICKY GLASSMORPHISM HEADER -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#dashboard" class="logo" aria-label="Quay lại đầu trang">
+                <span class="logo-icon">▲</span>
+                <span class="logo-title">HOME<span class="logo-dot">.</span></span>
+            </a>
+            
+            <nav class="nav" id="nav-menu" aria-label="Menu chính">
+                <ul class="nav-list">
+                    <li><a href="#dashboard" class="nav-link active">Dashboard</a></li>
+                    <li><a href="#journey" class="nav-link">Hành trình</a></li>
+                    <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                    <li><a href="#achievements" class="nav-link">Thành tựu</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Chuyển đổi chủ đề Sáng/Tối">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button id="mobile-toggle" class="mobile-toggle-btn" aria-expanded="false" aria-controls="nav-menu" aria-label="Mở menu điều hướng">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN BODY -->
+    <main>
+        
+        <!-- 4. LEARNING DASHBOARD SECTION -->
+        <section id="dashboard" class="section dashboard-section" aria-labelledby="dashboard-title">
+            <div class="container dashboard-grid">
+                <div class="dashboard-content reveal-left">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                        Nhập môn Công nghệ số & Ứng dụng AI
+                    </div>
+                    <h1 id="dashboard-title" class="dashboard-heading">
+                        HÀNH TRÌNH <br>
+                        <span class="text-gradient typing-target"></span><span class="cursor-blink">|</span>
+                    </h1>
+                    <p class="dashboard-desc">
+                        Hồ sơ năng lực học thuật tích hợp các minh chứng số, ứng dụng trí tuệ nhân tạo và kỹ năng giải quyết vấn đề trong học tập thời đại mới.
+                    </p>
+                    
+                    <div class="dashboard-student">
+                        <div class="student-avatar-wrap">
+                            <img src="img/avt.jpg" alt="Dương Danh Phát" class="student-avt" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="student-avt-placeholder" style="display: none;">DDP</div>
+                        </div>
+                        <div class="student-info">
+                            <h3>Dương Danh Phát</h3>
+                            <p>Ngành học: Kĩ thuật Máy tính</p>
+                        </div>
+                    </div>
+
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <div class="stat-num" data-target="6">0</div>
+                            <p class="stat-label">Bài tập</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num" data-target="100">0</div><span class="stat-suffix">%</span>
+                            <p class="stat-label">Tiến độ</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num" data-target="4">0</div>
+                            <p class="stat-label">Huy hiệu</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num" data-target="15">0</div><span class="stat-suffix">+</span>
+                            <p class="stat-label">Kỹ năng</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-visual reveal-right">
+                    <div class="visual-card">
+                        <div class="ring-wrapper">
+                            <svg class="circle-progress" width="280" height="280" viewBox="0 0 280 280">
+                                <circle class="circle-bg" cx="140" cy="140" r="120"></circle>
+                                <circle class="circle-fill" cx="140" cy="140" r="120"></circle>
+                            </svg>
+                            <div class="ring-content">
+                                <img src="img/avt.jpg" alt="Dương Danh Phát" class="ring-avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="ring-avatar-placeholder" style="display: none;">DDP</div>
+                                <span class="ring-percent-overlay">100% Hoàn thành</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating decoration shapes -->
+                        <div class="floating-shape shape-blue" id="shape-1"></div>
+                        <div class="floating-shape shape-green" id="shape-2"></div>
+                        <div class="floating-shape shape-purple" id="shape-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. INTERACTIVE LEARNING ROADMAP (TIMELINE) -->
+        <section id="journey" class="section journey-section" aria-labelledby="journey-title">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-label">Hành trình số</span>
+                    <h2 id="journey-title" class="section-title">Interactive Learning Roadmap</h2>
+                    <p class="section-desc">Khám phá hành trình phát triển tri thức qua 6 cột mốc bài tập cốt lõi.</p>
+                </div>
+
+                <div class="roadmap-timeline">
+                    
+                    <!-- CHECKPOINT 1 -->
+                    <div class="timeline-node reveal-up" id="checkpoint-1">
+                        <div class="timeline-indicator">
+                            <span class="node-num">01</span>
+                            <div class="node-line"></div>
+                        </div>
+                        
+                        <div class="node-card card">
+                            <div class="node-banner bg-grad-1">
+                                <span class="node-icon">💻</span>
+                                <div class="node-banner-info">
+                                    <span class="node-badge">Checkpoint 1</span>
+                                    <h3>Bài tập 1 - Bài 1: Máy tính và các thiết bị ngoại vi</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="node-body">
+                                <p class="node-summary"><strong>Mục tiêu:</strong> Làm chủ cấu trúc vật lý của hệ thống máy tính, phân tích cơ chế hoạt động của CPU, RAM và các thiết bị ngoại vi kết nối đầu vào/đầu ra.</p>
+                                
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>💡 Quy trình & Công cụ thực hiện</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <p><strong>Công cụ:</strong> Draw.io, Canva, tài liệu đặc tả kỹ thuật phần cứng Intel & AMD.</p>
+                                                <p><strong>Quy trình:</strong></p>
+                                                <ol>
+                                                    <li>Nghiên cứu nguyên lý Von Neumann và kiến trúc CPU hiện đại.</li>
+                                                    <li>Khảo sát thực tế các cổng giao tiếp (USB-C, HDMI, PCIe).</li>
+                                                    <li>Thiết lập sơ đồ luồng trao đổi dữ liệu từ thiết bị nhập qua bus hệ thống đến bộ xử lý trung tâm và thiết bị xuất.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>📊 Kết quả & Bài học rút ra</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <p><strong>Kết quả:</strong> Xây dựng thành công Infographic kiến trúc máy tính và sơ đồ hệ thống tương tác đạt chuẩn tối ưu.</p>
+                                                <p><strong>Bài học:</strong> Hiểu rõ cách tối ưu hóa phần cứng giúp cải thiện hiệu suất phần mềm, biết cách lựa chọn thiết bị ngoại vi phù hợp với nhu cầu công việc thực tế.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>🖼️ Sơ đồ & Minh họa số (3 Bản vẽ SVG)</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <div class="illustrations-container" data-checkpoint="1">
+                                                    <!-- Injected by JS -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="node-actions-row">
+                                    <button class="btn btn-primary open-pdf-view" data-path="Baitap/Bai1/bai1.pdf" data-title="Báo cáo Bài 1: Máy tính & Ngoại vi">Xem PDF trực tiếp</button>
+                                    <a class="btn btn-outline" href="Baitap/Bai1/bai1.pdf" download>Tải file PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CHECKPOINT 2 -->
+                    <div class="timeline-node reveal-up" id="checkpoint-2">
+                        <div class="timeline-indicator">
+                            <span class="node-num">02</span>
+                            <div class="node-line"></div>
+                        </div>
+                        
+                        <div class="node-card card">
+                            <div class="node-banner bg-grad-2">
+                                <span class="node-icon">🔍</span>
+                                <div class="node-banner-info">
+                                    <span class="node-badge">Checkpoint 2</span>
+                                    <h3>Bài tập 2 - Bài 2: Khai thác dữ liệu và thông tin</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="node-body">
+                                <p class="node-summary"><strong>Mục tiêu:</strong> Ứng dụng các cú pháp tìm kiếm nâng cao (Search Operators) để khai thác thông tin chính xác, phân tích độ tin cậy của tài liệu qua CRAAP test.</p>
+                                
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>💡 Cú pháp Tìm kiếm & Công cụ</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <p><strong>Công cụ:</strong> Google Search Engine, Google Scholar, CRAAP Evaluation Framework.</p>
+                                                <p><strong>Quy trình thực hiện:</strong></p>
+                                                <ol>
+                                                    <li>Phân tích nhu cầu tìm kiếm tài liệu học thuật về Trí tuệ nhân tạo.</li>
+                                                    <li>Xây dựng câu lệnh chứa toán tử: `site:`, `filetype:`, `intitle:`, `inurl:`, `AND`, `OR`.</li>
+                                                    <li>Tiến hành tìm kiếm, lọc các bài báo khoa học và thực hiện đánh giá độ tin cậy của nguồn tin.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>💻 Trình giả lập Toán tử Tìm kiếm nâng cao</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <div class="search-demo-container">
+                                                    <h4>Interactive Search Query Builder</h4>
+                                                    <p class="text-sm">Click chọn toán tử bên dưới để lắp ráp câu lệnh tìm kiếm chuyên nghiệp:</p>
+                                                    
+                                                    <div class="search-operators-grid">
+                                                        <button class="op-btn" data-op="site:edu.vn">site:edu.vn</button>
+                                                        <button class="op-btn" data-op="filetype:pdf">filetype:pdf</button>
+                                                        <button class="op-btn" data-op="intitle:&quot;Trí tuệ nhân tạo&quot;">intitle:"AI"</button>
+                                                        <button class="op-btn" data-op="inurl:tuyen-sinh">inurl:tuyen-sinh</button>
+                                                        <button class="op-btn" data-op="AND">AND</button>
+                                                        <button class="op-btn" data-op="OR">OR</button>
+                                                        <button id="search-clear" class="op-btn btn-clear">Xóa câu lệnh</button>
+                                                    </div>
+
+                                                    <div class="search-box-wrap">
+                                                        <input type="text" id="interactive-search-input" readonly value="site:edu.vn filetype:pdf">
+                                                        <button id="search-run-btn" class="search-run">Chạy Demo</button>
+                                                    </div>
+
+                                                    <div id="search-demo-results" class="search-results-output">
+                                                        <p class="placeholder-text">Kết quả giả lập tìm kiếm sẽ xuất hiện ở đây...</p>
+                                                    </div>
+
+                                                    <!-- CRAAP Evaluation Table -->
+                                                    <h5 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">Bảng Đánh Giá Nguồn Tin (CRAAP Test)</h5>
+                                                    <div class="table-responsive">
+                                                        <table class="craap-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Tiêu chí</th>
+                                                                    <th>Mô tả đánh giá</th>
+                                                                    <th>Điểm</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><strong>C (Currency)</strong></td>
+                                                                    <td>Thời gian xuất bản thông tin có cập nhật mới hay không?</td>
+                                                                    <td>9/10</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><strong>R (Relevance)</strong></td>
+                                                                    <td>Thông tin có liên quan trực tiếp đến đề tài nghiên cứu AI?</td>
+                                                                    <td>10/10</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><strong>A (Authority)</strong></td>
+                                                                    <td>Tác giả/Tổ chức xuất bản có đủ thẩm quyền học thuật?</td>
+                                                                    <td>9/10</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><strong>A (Accuracy)</strong></td>
+                                                                    <td>Độ chính xác, có dữ liệu đối chiếu, không lỗi chính tả.</td>
+                                                                    <td>9/10</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><strong>P (Purpose)</strong></td>
+                                                                    <td>Mục đích xuất bản là nghiên cứu khoa học, phi lợi nhuận.</td>
+                                                                    <td>10/10</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>🖼️ Sơ đồ & Minh họa số (3 Bản vẽ SVG)</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <div class="illustrations-container" data-checkpoint="2">
+                                                    <!-- Injected by JS -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="node-actions-row">
+                                    <button class="btn btn-primary open-pdf-view" data-path="Baitap/Bai2/bai2.pdf" data-title="Báo cáo Bài 2: Khai thác dữ liệu">Xem PDF trực tiếp</button>
+                                    <a class="btn btn-outline" href="Baitap/Bai2/bai2.pdf" download>Tải file PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CHECKPOINT 3 -->
+                    <div class="timeline-node reveal-up" id="checkpoint-3">
+                        <div class="timeline-indicator">
+                            <span class="node-num">03</span>
+                            <div class="node-line"></div>
+                        </div>
+                        
+                        <div class="node-card card">
+                            <div class="node-banner bg-grad-3">
+                                <span class="node-icon">🧠</span>
+                                <div class="node-banner-info">
+                                    <span class="node-badge">Checkpoint 3</span>
+                                    <h3>Bài tập 2 - Bài 3: Tổng quan về trí tuệ nhân tạo</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="node-body">
+                                <p class="node-summary"><strong>Mục tiêu:</strong> Khảo sát bức tranh toàn cảnh về Trí tuệ nhân tạo (AI), các nhánh cốt lõi (Machine Learning, Deep Learning, NLP) và tầm ảnh hưởng sâu rộng đến xã hội hiện đại.</p>
+                                
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>💡 Lịch sử & Tác động của AI</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <p><strong>Quy trình:</strong> Phân tích các dấu mốc quan trọng từ phép thử Turing đến sự bùng nổ của mạng Nơ-ron nhân tạo và Generative AI (LLMs).</p>
+                                                
+                                                <div class="timeline-ai-wrapper">
+                                                    <div class="timeline-ai-item">
+                                                        <span class="ai-time">1950</span>
+                                                        <strong>Alan Turing - Turing Test</strong>
+                                                        <p>Đề xuất bài kiểm tra khả năng tư duy của máy tính.</p>
+                                                    </div>
+                                                    <div class="timeline-ai-item">
+                                                        <span class="ai-time">1997</span>
+                                                        <strong>IBM Deep Blue</strong>
+                                                        <p>Đánh bại kỳ thủ cờ vua thế giới Garry Kasparov.</p>
+                                                    </div>
+                                                    <div class="timeline-ai-item">
+                                                        <span class="ai-time">2016</span>
+                                                        <strong>Google AlphaGo</strong>
+                                                        <p>Chiến thắng kỳ thủ cờ vây Lee Sedol bằng Deep Learning.</p>
+                                                    </div>
+                                                    <div class="timeline-ai-item">
+                                                        <span class="ai-time">2022+</span>
+                                                        <strong>Generative AI & LLMs</strong>
+                                                        <p>Sự ra đời của ChatGPT, Claude mở ra kỷ nguyên đồng sáng tạo cùng AI.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>📈 Phân loại & Ứng dụng thực tế</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <p><strong>Phân loại AI:</strong></p>
+                                                <ul>
+                                                    <li><strong>Narrow AI (AI Hẹp):</strong> Thực hiện một nhiệm vụ chuyên biệt (nhận diện hình ảnh, dịch thuật, tự lái xe).</li>
+                                                    <li><strong>General AI (AGI - AI Chung):</strong> Trí tuệ ngang tầm con người ở mọi phương diện (đang trong quá trình nghiên cứu).</li>
+                                                    <li><strong>Super AI (ASI - Siêu AI):</strong> Vượt xa trí tuệ loài người trong tương lai.</li>
+                                                </ul>
+                                                <p><strong>Bài học:</strong> AI không thay thế con người, nhưng người biết ứng dụng AI sẽ dẫn đầu. Kỹ năng thiết kế câu lệnh (Prompt Engineering) là chìa khóa mở ra tiềm năng tối đa của AI.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>🖼 shrink Sơ đồ & Minh họa số (3 Bản vẽ SVG)</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <div class="illustrations-container" data-checkpoint="3">
+                                                    <!-- Injected by JS -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="node-actions-row">
+                                    <button class="btn btn-primary open-pdf-view" data-path="Baitap/Bai3/bai3.pdf" data-title="Báo cáo Bài 3: Tổng quan về AI">Xem PDF trực tiếp</button>
+                                    <a class="btn btn-outline" href="Baitap/Bai3/bai3.pdf" download>Tải file PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CHECKPOINT 4 -->
+                    <div class="timeline-node reveal-up" id="checkpoint-4">
+                        <div class="timeline-indicator">
+                            <span class="node-num">04</span>
+                            <div class="node-line"></div>
+                        </div>
+                        
+                        <div class="node-card card">
+                            <div class="node-banner bg-grad-4">
+                                <span class="node-icon">👥</span>
+                                <div class="node-banner-info">
+                                    <span class="node-badge">Checkpoint 4</span>
+                                    <h3>Bài tập 3 - Bài 4: Giao tiếp và hợp tác trong môi trường số</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="node-body">
+                                <p class="node-summary"><strong>Mục tiêu:</strong> Thiết lập quy trình giao tiếp, chia sẻ tri thức và quản lý tiến độ dự án nhóm bằng cách ứng dụng Kanban Board kỹ thuật số và các công cụ số hóa.</p>
+                                
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>💡 Kế hoạch & Công cụ giao tiếp</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <p><strong>Hệ sinh thái công cụ:</strong> Slack/Discord (Giao tiếp tức thời), Notion (Lưu trữ wiki), GitHub/Figma (Hợp tác thiết kế & code).</p>
+                                                <p><strong>Bài học rút ra:</strong> Quản trị sự bất đồng đồng bộ (Asynchronous Communication) thông qua tài liệu hóa quy trình đóng vai trò sống còn trong hiệu suất làm việc nhóm.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>📋 Tương tác Kanban Board (Kéo & Thả)</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <p class="text-sm" style="margin-bottom: 1rem;">Kéo thả các đầu việc dưới đây để thay đổi trạng thái tiến độ dự án:</p>
+                                                <div class="kanban-container">
+                                                    <div class="kanban-col" data-status="todo">
+                                                        <div class="kanban-col-header bg-todo">Cần làm</div>
+                                                        <div class="kanban-cards-list" id="col-todo">
+                                                            <div class="k-card" draggable="true" id="task-1">
+                                                                <span class="k-badge k-design">Thiết kế UI</span>
+                                                                <p>Lên wireframe cho trang Dashboard và Timeline</p>
+                                                            </div>
+                                                            <div class="k-card" draggable="true" id="task-2">
+                                                                <span class="k-badge k-dev">Viết Code</span>
+                                                                <p>Lập trình chức năng PDF Viewer tùy biến</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="kanban-col" data-status="doing">
+                                                        <div class="kanban-col-header bg-doing">Đang làm</div>
+                                                        <div class="kanban-cards-list" id="col-doing">
+                                                            <div class="k-card" draggable="true" id="task-3">
+                                                                <span class="k-badge k-doc">Nội dung</span>
+                                                                <p>Tổng hợp các minh chứng bài tập 1-6</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="kanban-col" data-status="review">
+                                                        <div class="kanban-col-header bg-review">Đánh giá</div>
+                                                        <div class="kanban-cards-list" id="col-review">
+                                                            <div class="k-card" draggable="true" id="task-4">
+                                                                <span class="k-badge k-qa">Kiểm thử</span>
+                                                                <p>Rà soát hiệu ứng scroll và khả năng phản hồi di động</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="kanban-col" data-status="done">
+                                                        <div class="kanban-col-header bg-done">Hoàn thành</div>
+                                                        <div class="kanban-cards-list" id="col-done">
+                                                            <div class="k-card" draggable="true" id="task-5">
+                                                                <span class="k-badge k-mgt">Quản lý</span>
+                                                                <p>Lập đề cương chi tiết các trạm hành trình học tập</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>🖼️ Sơ đồ & Minh họa số (3 Bản vẽ SVG)</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <div class="illustrations-container" data-checkpoint="4">
+                                                    <!-- Injected by JS -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="node-actions-row">
+                                    <button class="btn btn-primary open-pdf-view" data-path="Baitap/Bai4/bai4.pdf" data-title="Báo cáo Bài 4: Hợp tác môi trường số">Xem PDF trực tiếp</button>
+                                    <a class="btn btn-outline" href="Baitap/Bai4/bai4.pdf" download>Tải file PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CHECKPOINT 5 -->
+                    <div class="timeline-node reveal-up" id="checkpoint-5">
+                        <div class="timeline-indicator">
+                            <span class="node-num">05</span>
+                            <div class="node-line"></div>
+                        </div>
+                        
+                        <div class="node-card card">
+                            <div class="node-banner bg-grad-5">
+                                <span class="node-icon">✨</span>
+                                <div class="node-banner-info">
+                                    <span class="node-badge">Checkpoint 5</span>
+                                    <h3>Bài tập 2 - Bài 5: Sáng tạo nội dung số</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="node-body">
+                                <p class="node-summary"><strong>Mục tiêu:</strong> Sáng tạo và biên tập các ấn phẩm truyền thông số, slide thuyết trình kỹ thuật và thiết kế các định dạng nội dung số chuyên nghiệp.</p>
+                                
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>💡 Ý tưởng & Công cụ sáng tạo</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <p><strong>Công cụ:</strong> Figma, Photoshop, Midjourney (tạo asset), Adobe Premiere / CapCut.</p>
+                                                <p><strong>Nguyên tắc thiết kế áp dụng:</strong> Quy tắc 60-30-10 về màu sắc, phân cấp trực quan (Visual Hierarchy), bố cục lưới (Grid Layout) và nghệ thuật sắp chữ (Typography).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>🎨 Bộ sưu tập Ấn phẩm số & Bộ lọc tương tác</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <div class="gallery-section-inner">
+                                                    <div class="gallery-controls">
+                                                        <input type="text" id="gallery-search" class="search-input" placeholder="Tìm tên tác phẩm...">
+                                                        <div class="filter-buttons">
+                                                            <button class="filter-btn active" data-cat="all">Tất cả</button>
+                                                            <button class="filter-btn" data-cat="design">Thiết kế UI</button>
+                                                            <button class="filter-btn" data-cat="content">Ấn phẩm truyền thông</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="gallery-grid" id="creative-gallery">
+                                                        <!-- Cards injected by JS -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>🖼️ Sơ đồ & Minh họa số (3 Bản vẽ SVG)</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <div class="illustrations-container" data-checkpoint="5">
+                                                    <!-- Injected by JS -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="node-actions-row">
+                                    <button class="btn btn-primary open-pdf-view" data-path="Baitap/Bai5/bai5.pdf" data-title="Báo cáo Bài 5: Sáng tạo nội dung">Xem PDF trực tiếp</button>
+                                    <a class="btn btn-outline" href="Baitap/Bai5/bai5.pdf" download>Tải file PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CHECKPOINT 6 -->
+                    <div class="timeline-node reveal-up" id="checkpoint-6">
+                        <div class="timeline-indicator">
+                            <span class="node-num">06</span>
+                            <div class="node-line"></div>
+                        </div>
+                        
+                        <div class="node-card card">
+                            <div class="node-banner bg-grad-6">
+                                <span class="node-icon">🛡️</span>
+                                <div class="node-banner-info">
+                                    <span class="node-badge">Checkpoint 6</span>
+                                    <h3>Bài tập 4 - Bài 6: An toàn và liêm chính học thuật trong môi trường số</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="node-body">
+                                <p class="node-summary"><strong>Mục tiêu:</strong> Tuân thủ và thực thi các nguyên tắc đạo đức trong sử dụng trí tuệ nhân tạo, bảo vệ dữ liệu cá nhân và ngăn ngừa đạo văn.</p>
+                                
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>🛡️ 7 Nguyên tắc sử dụng AI có trách nhiệm</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <div class="principles-grid">
+                                                    <div class="p-card">
+                                                        <h5>1. Minh bạch (Transparency)</h5>
+                                                        <p class="text-sm">Khai báo rõ ràng các phần nội dung hoặc mã nguồn được hỗ trợ tạo lập bởi trí tuệ nhân tạo.</p>
+                                                        <p class="text-xs"><em>Ví dụ:</em> Đặt mục "AI Disclosure" ở phụ lục đồ án.</p>
+                                                    </div>
+                                                    <div class="p-card">
+                                                        <h5>2. Kiểm chứng (Verification)</h5>
+                                                        <p class="text-sm">Xác thực chéo mọi thông tin và số liệu do AI cung cấp trước khi đưa vào báo cáo học thuật.</p>
+                                                        <p class="text-xs"><em>Ví dụ:</em> Kiểm tra nguồn trích dẫn gốc từ Google Scholar.</p>
+                                                    </div>
+                                                    <div class="p-card">
+                                                        <h5>3. Không đạo văn (Academic Integrity)</h5>
+                                                        <p class="text-sm">Không sao chép nguyên bản văn bản AI tạo ra làm bài của mình mà cần diễn đạt lại bằng ngôn từ cá nhân.</p>
+                                                        <p class="text-xs"><em>Ví dụ:</em> Viết nhận định cá nhân sau khi tham khảo ý tưởng AI.</p>
+                                                    </div>
+                                                    <div class="p-card">
+                                                        <h5>4. Tôn trọng bản quyền (Copyright)</h5>
+                                                        <p class="text-sm">Tuân thủ luật bản quyền sở hữu trí tuệ đối với các hình ảnh và dữ liệu huấn luyện.</p>
+                                                        <p class="text-xs"><em>Ví dụ:</em> Chỉ dùng ảnh Creative Commons hoặc tự vẽ.</p>
+                                                    </div>
+                                                    <div class="p-card">
+                                                        <h5>5. Bảo mật dữ liệu (Data Privacy)</h5>
+                                                        <p class="text-sm">Không upload các thông tin mật cá nhân, mã số sinh viên nhạy cảm lên máy chủ AI công cộng.</p>
+                                                        <p class="text-xs"><em>Ví dụ:</em> Ẩn thông tin cá nhân trong tập dữ liệu thử nghiệm.</p>
+                                                    </div>
+                                                    <div class="p-card">
+                                                        <h5>6. Công bằng (Fairness)</h5>
+                                                        <p class="text-sm">Nhận diện và loại bỏ các định kiến (bias) tiềm ẩn trong câu trả lời từ AI.</p>
+                                                        <p class="text-xs"><em>Ví dụ:</em> Đánh giá đa chiều từ nhiều nguồn quan điểm học thuật.</p>
+                                                    </div>
+                                                    <div class="p-card">
+                                                        <h5>7. Trách nhiệm cá nhân (Accountability)</h5>
+                                                        <p class="text-sm">Tác giả con người chịu trách nhiệm pháp lý và học thuật cao nhất đối với nội dung xuất bản.</p>
+                                                        <p class="text-xs"><em>Ví dụ:</em> Tự kiểm tra và chịu kỷ luật nếu bài viết vi phạm đạo đức.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                        <button class="accordion-toggle" aria-expanded="false">
+                                            <span>🖼️ Sơ đồ & Minh họa số (3 Bản vẽ SVG)</span>
+                                            <span class="accordion-icon">+</span>
+                                        </button>
+                                        <div class="accordion-panel">
+                                            <div class="panel-content">
+                                                <div class="illustrations-container" data-checkpoint="6">
+                                                    <!-- Injected by JS -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="node-actions-row">
+                                    <button class="btn btn-primary open-pdf-view" data-path="Baitap/Bai6/bai6.pdf" data-title="Báo cáo Bài 6: An toàn thông tin & Liêm chính">Xem PDF trực tiếp</button>
+                                    <a class="btn btn-outline" href="Baitap/Bai6/bai6.pdf" download>Tải file PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. SKILL ANALYTICS DASHBOARD SECTION -->
+        <section id="skills" class="section skills-section bg-sec" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-label">Đánh giá năng lực</span>
+                    <h2 id="skills-title" class="section-title">Skill Analytics Dashboard</h2>
+                    <p class="section-desc">Phân tích mức độ cải thiện và phát triển năng lực qua quá trình giải quyết các bài tập môn học.</p>
+                </div>
+
+                <div class="skills-showcase-grid">
+                    
+                    <div class="skills-progress-column reveal-left">
+                        <div class="skill-progress-card">
+                            <div class="skill-progress-header">
+                                <span>Digital Literacy (Năng lực số)</span>
+                                <span class="skill-value">92%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-width="92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-progress-card">
+                            <div class="skill-progress-header">
+                                <span>AI Literacy (Hiểu biết AI)</span>
+                                <span class="skill-value">88%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-width="88%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-progress-card">
+                            <div class="skill-progress-header">
+                                <span>Prompt Engineering (Thiết kế câu lệnh)</span>
+                                <span class="skill-value">95%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-width="95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-progress-card">
+                            <div class="skill-progress-header">
+                                <span>Research Skills (Năng lực nghiên cứu)</span>
+                                <span class="skill-value">85%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-width="85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-progress-card">
+                            <div class="skill-progress-header">
+                                <span>Collaboration (Kỹ năng hợp tác)</span>
+                                <span class="skill-value">90%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-width="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-progress-card">
+                            <div class="skill-progress-header">
+                                <span>Content Creation (Sáng tạo nội dung)</span>
+                                <span class="skill-value">80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-width="80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-progress-card">
+                            <div class="skill-progress-header">
+                                <span>Critical Thinking (Tư duy phản biện)</span>
+                                <span class="skill-value">87%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill" data-width="87%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-radar-column reveal-right">
+                        <div class="radar-card card">
+                            <!-- Circular Vector Skill Diagram -->
+                            <svg class="skills-circular-diagram" viewBox="0 0 400 400" width="100%">
+                                <circle cx="200" cy="200" r="160" class="rad-circle rad-outer"></circle>
+                                <circle cx="200" cy="200" r="120" class="rad-circle rad-mid"></circle>
+                                <circle cx="200" cy="200" r="80" class="rad-circle rad-inner"></circle>
+                                
+                                <!-- Axis rays -->
+                                <line x1="200" y1="40" x2="200" y2="360" class="rad-line"></line>
+                                <line x1="40" y1="200" x2="360" y2="200" class="rad-line"></line>
+                                <line x1="87" y1="87" x2="313" y2="313" class="rad-line"></line>
+                                <line x1="87" y1="313" x2="313" y2="87" class="rad-line"></line>
+                                
+                                <!-- Core Polygon of Skills -->
+                                <polygon points="200,60 300,100 340,200 290,290 200,320 110,290 60,200 100,100" class="rad-poly-filled"></polygon>
+                                
+                                <!-- Label indicators -->
+                                <text x="200" y="30" class="rad-lbl-text text-anchor-middle">AI Prompt</text>
+                                <text x="320" y="90" class="rad-lbl-text">Nghiên cứu</text>
+                                <text x="350" y="205" class="rad-lbl-text">Hợp tác số</text>
+                                <text x="300" y="320" class="rad-lbl-text">Sáng tạo</text>
+                                <text x="200" y="375" class="rad-lbl-text text-anchor-middle">Phản biện</text>
+                                <text x="40" y="320" class="rad-lbl-text">Bảo mật</text>
+                                <text x="10" y="205" class="rad-lbl-text">Cú pháp tìm kiếm</text>
+                                <text x="50" y="90" class="rad-lbl-text">Tư duy số</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. PDF DOCUMENT CENTER SECTION DELETED -->
+
+        <!-- 8. LEARNING ACHIEVEMENT BOARD -->
+        <section id="achievements" class="section achievements-section bg-sec" aria-labelledby="achievements-title">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-label">Cột mốc</span>
+                    <h2 id="achievements-title" class="section-title">Learning Achievement Board</h2>
+                    <p class="section-desc">Chứng nhận và các huy hiệu tự hào đạt được sau 6 trạm học tập số.</p>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="achievement-card card reveal-up">
+                        <div class="ach-badge-icon">🎖️</div>
+                        <h4>Digital Master Badge</h4>
+                        <p class="text-sm text-sub">Được cấp cho việc hoàn thiện xuất sắc 100% nội dung bài học phần cứng máy tính và ngoại vi.</p>
+                        <div class="ach-unlock-status">Đã mở khóa ✓</div>
+                    </div>
+
+                    <div class="achievement-card card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="ach-badge-icon">🔬</div>
+                        <h4>Information Explorer</h4>
+                        <p class="text-sm text-sub">Chứng nhận năng lực xây dựng câu lệnh tìm kiếm chuyên sâu và phân tích CRAAP đạt điểm tuyệt đối.</p>
+                        <div class="ach-unlock-status">Đã mở khóa ✓</div>
+                    </div>
+
+                    <div class="achievement-card card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="ach-badge-icon">🤖</div>
+                        <h4>AI Prompt Engineer</h4>
+                        <p class="text-sm text-sub">Khen tặng khả năng tư duy giải quyết bài toán qua hệ thống Prompting có trách nhiệm.</p>
+                        <div class="ach-unlock-status">Đã mở khóa ✓</div>
+                    </div>
+
+                    <div class="achievement-card card reveal-up" style="transition-delay: 0.3s;">
+                        <div class="ach-badge-icon">🛡️</div>
+                        <h4>Ethical Digital Citizen</h4>
+                        <p class="text-sm text-sub">Đạt yêu cầu tối đa về nhận thức an toàn thông tin, tôn trọng liêm chính khoa học và bảo vệ dữ liệu.</p>
+                        <div class="ach-unlock-status">Đã mở khóa ✓</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. ACADEMIC REFLECTION CARD -->
+        <section class="section reflection-section" aria-labelledby="reflection-title">
+            <div class="container">
+                <div class="reflection-card card reveal-up">
+                    <div class="reflection-glow"></div>
+                    <div class="reflection-body">
+                        <h2 id="reflection-title" class="reflection-heading">Lời Kết: Academic Reflection</h2>
+                        <p class="reflection-quote">
+                            "Kỷ nguyên số không đòi hỏi chúng ta phải nhớ tất cả thông tin, mà đòi hỏi chúng ta có năng lực tìm kiếm, đánh giá và ứng dụng công nghệ để giải quyết vấn đề một cách có đạo đức."
+                        </p>
+                        <div class="reflection-text">
+                            <p>
+                                Môn học <strong>Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo</strong> đã trang bị cho tôi một bộ kỹ năng nền tảng vững chắc. Từ cách phân tích phần cứng máy tính đến các thuật toán AI phức tạp, tôi nhận ra công nghệ là một đòn bẩy khổng lồ. Tuy nhiên, hành động mang tính quyết định luôn nằm ở khả năng kiểm chứng dữ liệu, tinh thần giao tiếp hợp tác và tư duy phản biện có trách nhiệm đạo đức.
+                            </p>
+                            <p>
+                                <strong>Định hướng tương lai:</strong> Tôi sẽ tiếp tục đào sâu nghiên cứu các mô hình ngôn ngữ lớn (LLMs), tự động hóa quy trình học tập cá nhân và áp dụng các nguyên tắc liêm chính học thuật vào mọi đề án nghiên cứu chuyên ngành tiếp theo.
+                            </p>
+                        </div>
+                        
+                        <div class="reflection-footer">
+                            <div class="author-avatar-wrap">
+                                <img src="img/avt.jpg" alt="Dương Danh Phát" class="author-avt" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="author-avt-placeholder" style="display: none;">DDP</div>
+                            </div>
+                            <div class="author-meta">
+                                <strong>Dương Danh Phát</strong>
+                                <span>Ngành học: Kĩ thuật Máy tính</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 10. FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>PORTFOLIO<span class="logo-dot">.</span></h3>
+                <p>Portfolio kỹ năng số học thuật cuối kỳ môn Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo.</p>
+            </div>
+            
+            <div class="footer-links-wrap">
+                <ul class="footer-links">
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#journey">Hành trình</a></li>
+                    <li><a href="#skills">Kỹ năng</a></li>
+                </ul>
+            </div>
+            
+            <button id="back-to-top" class="back-to-top-btn" aria-label="Quay lại đầu trang">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </button>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dương Danh Phát. Dự án được phát triển bằng HTML5/CSS3/ES6 nguyên bản.</p>
+        </div>
+    </footer>
+
+    <!-- 11. PDF VIEWER MODAL (NOTION & GOOGLE DRIVE LOOK AND FEEL) -->
+    <div id="pdf-modal" class="modal-overlay-wrap" aria-hidden="true" role="dialog">
+        <div class="modal-backdrop" data-close="pdf"></div>
+        <div class="modal-container">
+            <header class="modal-header">
+                <div class="modal-title-wrap">
+                    <span class="modal-file-icon">📄</span>
+                    <h4 id="modal-pdf-title" class="modal-title">Tài liệu.pdf</h4>
+                </div>
+                <div class="modal-toolbar">
+                    <button class="toolbar-btn" id="pdf-zoom-in" aria-label="Phóng to">Zoom +</button>
+                    <button class="toolbar-btn" id="pdf-zoom-out" aria-label="Thu nhỏ">Zoom -</button>
+                    <button class="toolbar-btn" id="pdf-fullscreen" aria-label="Toàn màn hình">Toàn màn hình</button>
+                    <a class="toolbar-btn btn-highlight" id="pdf-download-link" href="#" download>Tải xuống</a>
+                    <button class="modal-close-btn" data-close="pdf" aria-label="Đóng cửa sổ">&times;</button>
+                </div>
+            </header>
+            
+            <div class="modal-body-viewer">
+                <div id="pdf-viewer-content" class="viewer-iframe-box">
+                    <!-- Injected dynamically by JS (iframe/object tag) -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 12. IMAGE LIGHTBOX MODAL -->
+    <div id="lightbox-modal" class="lightbox-overlay" aria-hidden="true" role="dialog">
+        <div class="lightbox-backdrop" data-close="lightbox"></div>
+        <div class="lightbox-content-wrap">
+            <button class="lightbox-close-btn" data-close="lightbox" aria-label="Đóng">&times;</button>
+            <div class="lightbox-img-box">
+                <!-- SVG / Image code will be cloned here -->
+            </div>
+            <p id="lightbox-caption" class="lightbox-caption">Mô tả tác phẩm</p>
+        </div>
+    </div>
+
+    <!-- main.js scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
