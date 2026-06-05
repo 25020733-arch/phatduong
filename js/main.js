@@ -918,17 +918,18 @@ document.addEventListener('DOMContentLoaded', () => {
     function openPDFViewer(path, title) {
         pdfTitle.textContent = title;
         pdfDownloadLink.setAttribute('href', path);
+        
+        // Cập nhật link mở tab mới
+        const openTabLink = document.getElementById('pdf-open-tab');
+        if (openTabLink) {
+            openTabLink.setAttribute('href', path);
+        }
+        
         pdfScale = 100;
         
-        // Insert embed or object tag to view PDF
+        // Sử dụng iframe thay vì object để tương thích tốt nhất trên mọi trình duyệt
         pdfViewerContent.innerHTML = `
-            <object id="pdf-object-tag" data="${path}" type="application/pdf" width="100%" height="100%" style="transform: scale(1.0); transform-origin: top center; transition: transform 0.2s;">
-                <div style="padding: 3rem; text-align: center; color: white;">
-                    <p style="font-size: 1.2rem; margin-bottom: 1rem;">Trình duyệt của bạn không hỗ trợ xem PDF trực tiếp hoặc file không tồn tại.</p>
-                    <p style="color: #9CA3AF; margin-bottom: 2rem;">Đường dẫn: <strong>${path}</strong></p>
-                    <a class="btn btn-primary" href="${path}" download>Tải file PDF về máy</a>
-                </div>
-            </object>
+            <iframe id="pdf-iframe-tag" src="${path}" width="100%" height="100%" style="border: none; transform: scale(1.0); transform-origin: top center; transition: transform 0.2s;"></iframe>
         `;
 
         pdfModal.classList.add('active');
@@ -949,7 +950,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // PDF Toolbar actions (Zoom In, Zoom Out, Fullscreen)
     document.getElementById('pdf-zoom-in').addEventListener('click', () => {
-        const obj = document.getElementById('pdf-object-tag');
+        const obj = document.getElementById('pdf-iframe-tag');
         if (obj && pdfScale < 200) {
             pdfScale += 20;
             obj.style.transform = `scale(${pdfScale / 100})`;
@@ -959,7 +960,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('pdf-zoom-out').addEventListener('click', () => {
-        const obj = document.getElementById('pdf-object-tag');
+        const obj = document.getElementById('pdf-iframe-tag');
         if (obj && pdfScale > 60) {
             pdfScale -= 20;
             obj.style.transform = `scale(${pdfScale / 100})`;
@@ -969,7 +970,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('pdf-fullscreen').addEventListener('click', () => {
-        const obj = document.getElementById('pdf-object-tag');
+        const obj = document.getElementById('pdf-iframe-tag');
         if (obj) {
             // Check if it has requestFullscreen
             const container = document.querySelector('.modal-body-viewer');
